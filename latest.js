@@ -213,7 +213,7 @@ Directory.prototype.chmod = function (p) {
     this.perms = p;
 };
 
-// KASH v0.1 engine
+// KASH engine
 
 var commands = {};
 
