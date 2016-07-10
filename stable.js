@@ -15,7 +15,7 @@
  * v0.1.4 + v0.7: Added `mkdir` system call and KASH command, concluding full R2W2 KAnix environment support!
  * v0.1.5 + v0.8: Added `executable`, `exec` KAnix system calls and `cd`, `kash` KASH commands, concluding full R2W2X environment support!
  *                Also included support for newlines in KASH strings.
- * v0.1.6 + v0.9: Added scrolling capability to CLI and `help` KASH command
+ * v0.1.6 + v0.8b: Added scrolling capability to CLI and `help` KASH command
 */
 
 var $ = {
@@ -173,7 +173,7 @@ Directory.prototype.init = function () {
     cur[this.path[p.length]] = this.files;
 };
 
-// KASH v0.1 engine
+// KASH engine
 
 var commands = {};
 
