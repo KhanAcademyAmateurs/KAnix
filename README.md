@@ -2,7 +2,7 @@
 KAnix is a fully fledged operating system written in JavaScript made for use on the Khan Academy platform (hence the name, **K**han **A**cademy \***nix**). It has an operable filesystem that is similar in many ways to Unix's.
 
 KASH is an extremely basic shell that comes with KAnix (hence the name, **K**han **A**cademy **SH**ell). As I said, it's extremely basic and nowhere near POSIX.
-```
+```javascript
 kash.pH = 1e3;
 ```
 
