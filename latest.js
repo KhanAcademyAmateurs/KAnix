@@ -2,7 +2,7 @@
  * KAnix v0.1.7 + KASH v0.8c
  * A basic, yet fully fledged, operating system + terminal!
  * -------------
- * Features: Environment, KASH v0.9 CLI, fully functional OS, runs PJS, etc.
+ * Features: Environment, KASH v0.8c CLI, fully functional OS, runs PJS, etc.
  * @TODO: Add I/O to CLI, more bug fixes (v0.1.8 + v0.8d)
  *        Implement I/O framework,
  *                  JIB path system & inclusions (Javascript Instead of Binaries),
