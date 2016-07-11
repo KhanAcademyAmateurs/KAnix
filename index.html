@@ -13,7 +13,7 @@
 				var script = scripts[i];
 				
 				$.ajax({
-					url: path,
+					url: script + ".js",
 					success: function (data) {
 						new Processing(document.getElementById(script), function (env) {
 							with (env) {
