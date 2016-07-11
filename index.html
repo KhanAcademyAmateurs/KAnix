@@ -16,12 +16,15 @@
 					$.ajax({
 						url: script + ".js",
 						success: function (data) {
-							new Processing(document.getElementById(script), function (env) {
+							function callback (env) {
 								with (env) {
 									console.log(data.split("\n")[37]);
 									eval(data);
 								}
-							})
+							}
+							
+							var canvas = document.getElementById(script);
+							new Processing(canvas, callback);
 						}
 					});
 				}
