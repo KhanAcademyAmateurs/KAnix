@@ -2,8 +2,28 @@
 <html>
 	<head>
 		<title> Official website for KAnix </title>
+		
 		<script src="processing.js"></script>
-		<script type="text/processing" src="stable.js" data-processing-target="stable"></script>
+		<script src="jquery.js"></script>
+		
+		<script>
+			var scripts = ["stable"];
+			
+			for (var i = 0; i < scripts.length; i ++) {
+				var script = scripts[i];
+				
+				$.ajax({
+					url: path,
+					success: function (data) {
+						new Processing(document.getElementById(script), function (env) {
+							with (env) {
+								eval(data);
+							}
+						})
+					}
+				});
+			}
+		</script>
 	</head>
 	<body>
 		<canvas id="stable"></canvas>
