@@ -18,6 +18,7 @@
 						success: function (data) {
 							new Processing(document.getElementById(script), function (env) {
 								with (env) {
+									console.log(data.split("\n")[37]);
 									eval(data);
 								}
 							})
