@@ -5,33 +5,8 @@
 		
 		<script src="processing.js"></script>
 		<script src="jquery.js"></script>
-		
-		<script>
-			$(document).ready(function () {
-				var scripts = ["stable"];
-				
-				for (var i = 0; i < scripts.length; i ++) {
-					var script = scripts[i];
-					
-					$.ajax({
-						url: script + ".js",
-						success: function (data) {
-							function callback (env) {
-								with (env) {
-									console.log(data.split("\n")[37]);
-									eval(data);
-								}
-							}
-							
-							var canvas = document.getElementById(script);
-							new Processing(canvas, callback);
-						}
-					});
-				}
-			});
-		</script>
 	</head>
 	<body>
-		<canvas id="stable"></canvas>
+		<iframe id="output-frame" sandbox="allow-pointer-lock allow-same-origin allow-scripts" src="https://www.kasandbox.org/computer-programming/exec/pjs?lang=en&amp;deferjsk=0&amp;v=160711-1359-4129a7817c77.394136102653885774" data-src="https://www.kasandbox.org/computer-programming/exec/pjs?lang=en" style="width: 100%; height: 402px;"></iframe>
 	</body>
 </html>
