@@ -1,5 +1,5 @@
 /**
- * KAnix v0.1.7.5 + KASH v0.8c
+ * KAnix v0.1.7 + KASH v0.8c
  * A basic, yet fully fledged, operating system + terminal!
  * -------------
  * Features: Environment, KASH v0.8c CLI, fully functional OS, runs PJS, etc.
@@ -40,7 +40,7 @@
  *                Also included support for newlines in KASH strings.
  * v0.1.6 + v0.8b: Added scrolling capability to CLI and `help` KASH command.
  * v0.1.7 + v0.8c: Added support for running P/JS using `javascript`, `sys` system calls and `js` KASH command
- * v0.1.7.5 + v0.8c: Fixed several bugs
+ * 
 */
 
 // Globals
@@ -544,38 +544,6 @@ var keyPressed = function () {
         break; case SHIFT:
             // nop. Prevents pressing shift to result in a placeholder char. Same for caps lock (20)
         break; case 20:
-            //
-        break; case UP:
-            //
-        break; case DOWN:
-            //
-        break; case RIGHT:
-            //
-        break; case LEFT:
-            //
-        break; case 17:
-            //
-        break; case 18:
-            //
-        break; case 157:
-            //
-        break; case 113:
-            //
-        break; case 114:
-            //
-        break; case 115:
-            //
-        break; case 116:
-            //
-        break; case 117:
-            //
-        break; case 118:
-            //
-        break; case 119:
-            //
-        break; case 120:
-            //
-        break; case 121:
             //
         break; default:
             d += key.toString();
