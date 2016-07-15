@@ -40,7 +40,6 @@
  *                Also included support for newlines in KASH strings.
  * v0.1.6 + v0.8b: Added scrolling capability to CLI and `help` KASH command.
  * v0.1.7 + v0.8c: Added support for running P/JS using `javascript`, `sys` system calls and `js` KASH command
- * 
 */
 
 // Globals
