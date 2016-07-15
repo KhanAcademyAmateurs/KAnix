@@ -394,7 +394,16 @@ commands = {
         return c || "";
     },
     cd: function (a) {
-        $.PWD = a[0] ? a[0][0] === "/" ? a[0] : $.PWD + a[0] + "/" : "/";
+        if (a instanceof Directory) {
+            if (writable(a)) {
+	            var p = getPath(path(a[0]));
+	            $.PWD = p[0]? p[0][0] === "/" ? p[0] : $.PWD + p[0] + "/" : "/";
+            } else {
+                return "cd: not allowed";
+            }
+        } else {
+            return "cd: not a directory\n";
+        }
         return "";
     },
     echo: function (a) {
